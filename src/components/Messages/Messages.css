@@ -1,0 +1,39 @@
+.message{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    border: solid black 1px;
+    height: 100px;
+    margin: 9px;
+    background-color: rgb(245, 240, 226);
+    box-shadow: 1px 2px #888888;
+    border-radius: 5px;
+}
+friendpicture{
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+friendname{
+
+}
+/* sender{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+} */
+message{
+    grid-column: 2 / 6;
+}
+timestamp{
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
+}
+friendpicture > img{
+    height: 60px;
+    border-radius: 50%;
+}
